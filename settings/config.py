@@ -14,7 +14,7 @@ AUTHOR = 'Timur_Sayranov'
 # родительская директория
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 # путь до базы данных
-DATABASE = os.path.join('sqlite:///'+BASE_DIR, NAME_DB)
+DATABASE = os.path.join('sqlite:///' + BASE_DIR, NAME_DB)
 
 COUNT = 0
 
@@ -37,7 +37,8 @@ KEYBOARD = {
     'AMOUNT_ORDERS': COUNT,
     'UP': emojize('🔼'),
     'APPLAY': '✅ Оформить заказ',
-    'COPY': '©️'
+    'COPY': '©️',
+    'OWL': '🦉'
 }
 
 # id категорий продуктов
